@@ -42,7 +42,7 @@ const rootElement = document.querySelector('#root');
 
 function App() {
     return (
-        <div>
+        <div className="content">
             <Header />
             <TeamMembers />
         </div>
@@ -103,6 +103,6 @@ function TeamMember({name, description, image, codepenLink, codepenName, isCofun
 
 createRoot(rootElement).render(
     <StrictMode>
-    <App />
+            <App />
     </StrictMode>
 )
